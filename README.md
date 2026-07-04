@@ -133,10 +133,3 @@ ai-seo-audit-agent/
 This only reads public pages, `robots.txt`, and `llms.txt` — the same things a search engine or AI crawler would read. It doesn't bypass paywalls, authentication, or robots.txt disallow rules. Still, be a reasonable citizen: use `--max-pages` and `--delay` sensibly, and prefer running it against your own sites or ones you have permission to audit.
 
 ---
-
-## For your resume / portfolio
-
-Suggested bullet:
-> Built an open-source AI SEO Audit Agent combining technical SEO, content quality, and GEO/AI-crawler-visibility scoring into a single automated report, with an optional LLM layer (bring-your-own OpenAI/Anthropic key) generating consultant-style executive summaries and content-gap analysis.
-
-The natural "flagship" piece alongside the AI Citation Tracker, Structured Data Bulk Auditor, and AI Crawler Access Toolkit — this one is the single-command version that ties all four together.

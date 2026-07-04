@@ -1,0 +1,3 @@
+url,title,title_length,meta_description_length,word_count,readability_flesch_score,h1_count,images_missing_alt,internal_links,external_links,has_structured_data,noindex,overall_score,technical_score,content_score,geo_score
+https://example.com/page1,Test Page Title Within Range,28,77,188,60.9,1,0,1,0,True,False,92.5,85,95,100
+https://example.com/page2,Test Page Title Within Range,28,77,188,60.9,1,0,1,0,True,False,92.5,85,95,100

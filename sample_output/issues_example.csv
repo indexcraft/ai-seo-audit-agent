@@ -1,0 +1,9 @@
+url,severity,check,message
+https://example.com/page1,warning,title,Title length 28 chars — recommended 30-60
+https://example.com/page1,warning,canonical,No canonical URL specified
+https://example.com/page1,warning,mobile,No viewport meta tag — page may not be mobile-optimized
+https://example.com/page1,warning,content,Thin content — only 188 words (300+ generally recommended for a standalone page)
+https://example.com/page2,warning,title,Title length 28 chars — recommended 30-60
+https://example.com/page2,warning,canonical,No canonical URL specified
+https://example.com/page2,warning,mobile,No viewport meta tag — page may not be mobile-optimized
+https://example.com/page2,warning,content,Thin content — only 188 words (300+ generally recommended for a standalone page)

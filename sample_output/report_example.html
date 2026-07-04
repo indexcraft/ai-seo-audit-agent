@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>SEO Audit Report — https://example.com</title>
+<style>
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background:#f8fafc; color:#1e293b; margin:0; padding:40px 20px; }
+  .container { max-width: 960px; margin: 0 auto; }
+  h1 { font-size: 28px; margin-bottom: 4px; }
+  .subtitle { color:#64748b; margin-bottom: 32px; }
+  .score-grid { display:flex; gap:16px; margin-bottom: 40px; flex-wrap: wrap; }
+  .score-card { background:white; border-radius:12px; padding:20px 24px; box-shadow:0 1px 3px rgba(0,0,0,0.08); flex:1; min-width:140px; text-align:center; }
+  .score-label { font-size:13px; color:#64748b; margin-bottom:8px; text-transform:uppercase; letter-spacing:0.05em; }
+  .score-value { font-size:36px; font-weight:700; }
+  .section { background:white; border-radius:12px; padding:28px; margin-bottom:24px; box-shadow:0 1px 3px rgba(0,0,0,0.08); }
+  .section h2 { margin-top:0; font-size:20px; }
+  table { width:100%; border-collapse: collapse; margin-top:16px; }
+  th, td { text-align:left; padding:10px 12px; border-bottom:1px solid #e2e8f0; font-size:14px; }
+  th { color:#64748b; font-weight:600; font-size:12px; text-transform:uppercase; }
+  .exec-summary { line-height:1.7; font-size:15px; }
+  .muted { color:#64748b; font-size:14px; }
+  .badge { color:white; padding:2px 10px; border-radius:999px; font-size:12px; font-weight:600; }
+  .issue-list { font-size:14px; line-height:1.9; padding-left:20px; }
+  .gap-note { font-size:12px; color:#7c3aed; margin-top:4px; }
+  a { color:#2563eb; text-decoration:none; }
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>SEO Audit Report</h1>
+  <div class="subtitle">https://example.com — 2 page(s) audited</div>
+
+  <div class="score-grid"><div class="score-card">
+        <div class="score-label">Overall</div>
+        <div class="score-value" style="color:#22c55e">92.5</div>
+    </div><div class="score-card">
+        <div class="score-label">Technical</div>
+        <div class="score-value" style="color:#22c55e">85.0</div>
+    </div><div class="score-card">
+        <div class="score-label">Content</div>
+        <div class="score-value" style="color:#22c55e">95.0</div>
+    </div><div class="score-card">
+        <div class="score-label">GEO / AI Visibility</div>
+        <div class="score-value" style="color:#22c55e">100.0</div>
+    </div></div>
+
+  <section class="section">
+            <h2>Executive Summary</h2>
+            <div class="exec-summary">Mocked executive summary text.<br>1. Fix titles<br>2. Add schema</div>
+        </section>
+
+  <section class="section">
+    <h2>Page-by-Page Breakdown</h2>
+    <table>
+      <thead><tr><th>URL</th><th>Words</th><th>Title Length</th><th>Structured Data</th><th>Score</th></tr></thead>
+      <tbody><tr>
+            <td><a href="https://example.com/page1" target="_blank">https://example.com/page1</a><div class="gap-note">Mocked executive summary text.
+1. Fix titles
+2. Add schema</div></td>
+            <td>188</td>
+            <td>28</td>
+            <td>Yes</td>
+            <td style="color:#22c55e">92.5</td>
+        </tr><tr>
+            <td><a href="https://example.com/page2" target="_blank">https://example.com/page2</a><div class="gap-note">Mocked executive summary text.
+1. Fix titles
+2. Add schema</div></td>
+            <td>188</td>
+            <td>28</td>
+            <td>Yes</td>
+            <td style="color:#22c55e">92.5</td>
+        </tr></tbody>
+    </table>
+  </section>
+
+  <section class="section">
+    <h2>Issues Found</h2>
+    <h3><span class="badge" style="background:#f59e0b">WARNING</span> (8)</h3><ul class="issue-list"><li><strong>title</strong> — Title length 28 chars — recommended 30-60 <span class="muted">(https://example.com/page1)</span></li><li><strong>canonical</strong> — No canonical URL specified <span class="muted">(https://example.com/page1)</span></li><li><strong>mobile</strong> — No viewport meta tag — page may not be mobile-optimized <span class="muted">(https://example.com/page1)</span></li><li><strong>content</strong> — Thin content — only 188 words (300+ generally recommended for a standalone page) <span class="muted">(https://example.com/page1)</span></li><li><strong>title</strong> — Title length 28 chars — recommended 30-60 <span class="muted">(https://example.com/page2)</span></li><li><strong>canonical</strong> — No canonical URL specified <span class="muted">(https://example.com/page2)</span></li><li><strong>mobile</strong> — No viewport meta tag — page may not be mobile-optimized <span class="muted">(https://example.com/page2)</span></li><li><strong>content</strong> — Thin content — only 188 words (300+ generally recommended for a standalone page) <span class="muted">(https://example.com/page2)</span></li></ul>
+  </section>
+
+  <section class="section">
+            <h2>AI Crawler Access</h2>
+            <p class="muted">All search/retrieval and on-demand AI bots are currently allowed.</p>
+            <table><thead><tr><th>Bot</th><th>Operator</th><th>Category</th><th>Status</th></tr></thead><tbody><tr><td>GPTBot</td><td>OpenAI</td><td>training</td><td>🚫 Blocked</td></tr><tr><td>OAI-SearchBot</td><td>OpenAI</td><td>search_retrieval</td><td>✅ Allowed</td></tr><tr><td>ChatGPT-User</td><td>OpenAI</td><td>on_demand</td><td>✅ Allowed</td></tr><tr><td>ClaudeBot</td><td>Anthropic</td><td>training</td><td>✅ Allowed</td></tr><tr><td>anthropic-ai</td><td>Anthropic</td><td>training</td><td>✅ Allowed</td></tr><tr><td>Claude-SearchBot</td><td>Anthropic</td><td>search_retrieval</td><td>✅ Allowed</td></tr><tr><td>Claude-User</td><td>Anthropic</td><td>on_demand</td><td>✅ Allowed</td></tr><tr><td>PerplexityBot</td><td>Perplexity</td><td>search_retrieval</td><td>✅ Allowed</td></tr><tr><td>Perplexity-User</td><td>Perplexity</td><td>on_demand</td><td>✅ Allowed</td></tr><tr><td>Googlebot</td><td>Google</td><td>search_retrieval</td><td>✅ Allowed</td></tr><tr><td>Google-Extended</td><td>Google</td><td>opt_out_token</td><td>✅ Allowed</td></tr><tr><td>Bingbot</td><td>Microsoft</td><td>search_retrieval</td><td>✅ Allowed</td></tr><tr><td>Amazonbot</td><td>Amazon</td><td>training</td><td>✅ Allowed</td></tr><tr><td>Applebot-Extended</td><td>Apple</td><td>opt_out_token</td><td>✅ Allowed</td></tr><tr><td>FacebookBot</td><td>Meta</td><td>training</td><td>✅ Allowed</td></tr><tr><td>meta-externalagent</td><td>Meta</td><td>training</td><td>✅ Allowed</td></tr><tr><td>Bytespider</td><td>ByteDance</td><td>training</td><td>✅ Allowed</td></tr><tr><td>CCBot</td><td>Common Crawl</td><td>training</td><td>✅ Allowed</td></tr><tr><td>DuckAssistBot</td><td>DuckDuckGo</td><td>search_retrieval</td><td>✅ Allowed</td></tr></tbody></table>
+        </section>
+  <section class="section"><h2>llms.txt</h2><p>Not found</p></section>
+</div>
+</body>
+</html>
